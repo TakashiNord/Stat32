@@ -1,0 +1,330 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "n33.ico"
+IDI_SMALL               ICON    DISCARDABLE     "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INFO DIALOGEX 300, 100, 184, 271
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Статистика УП...."
+MENU IDC_STAT32
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOKEXIT,67,255,50,14
+    LTEXT           "Время выполнения УП (мин) =",IDC_STATIC,8,71,106,9
+    EDITTEXT        IDC_TIME,119,68,44,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_DIST,119,84,44,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "Пройденный путь (mm) =",IDC_STATIC,31,87,83,9
+    EDITTEXT        IDC_NumKadrs,119,100,44,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "Число кадров =",IDC_STATIC,58,103,56,9
+    GROUPBOX        "Число перемещений",IDC_STATIC,2,114,179,26,WS_GROUP
+    LTEXT           "Линейных =",IDC_STATIC,8,124,45,9
+    LTEXT           "Круговых =",IDC_STATIC,96,124,41,9
+    EDITTEXT        IDC_NumLine,53,124,37,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | WS_GROUP
+    EDITTEXT        IDC_NumCircle,139,124,37,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | WS_GROUP
+    GROUPBOX        "Скорость движения инструмента",IDC_STATIC,2,143,179,34
+    LTEXT           "Min подача (мм/мин)",IDC_STATIC,8,151,74,10
+    LTEXT           "Max подача (мм/мин)",IDC_STATIC,89,151,75,9
+    EDITTEXT        IDC_Minfeed,32,162,49,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_Maxfeed,112,162,49,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_TYPE,119,4,62,12,ES_MULTILINE | ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    PUSHBUTTON      "->Выбрать файл УП...",IDC_FILE,2,1,80,17
+    LTEXT           "Тип УП:",IDC_STATIC,89,6,27,8
+    GROUPBOX        "Координаты....",IDC_STATIC,2,180,179,73,BS_FLAT
+    LTEXT           "Габариты:",IDC_STATIC,8,191,37,9
+    LTEXT           " X ",IDC_STATIC,59,191,10,8
+    LTEXT           " Y ",IDC_STATIC,101,191,10,8
+    LTEXT           " Z ",IDC_STATIC,141,191,10,8
+    LTEXT           " min ",IDC_STATIC,17,204,16,10
+    LTEXT           " max ",IDC_STATIC,16,218,18,10
+    LTEXT           " Сумма ",IDC_STATIC,11,236,30,10
+    EDITTEXT        IDC_minX,46,202,38,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_minY,87,202,38,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_minZ,129,202,38,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_maxX,46,218,38,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_maxY,87,218,38,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_maxZ,129,218,38,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_sumX,46,236,38,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_sumY,87,236,38,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_sumZ,129,236,38,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "........",IDC_CAPTION,2,20,179,47,SS_SUNKEN
+END
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 200, 151
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "О программе и об авторах..."
+FONT 8, "System"
+BEGIN
+    ICON            IDI_STAT32,IDC_MYICON,2,4,20,20
+    LTEXT           "Stat32 Version 1.0",IDC_STATIC,22,5,61,8,SS_NOPREFIX
+    CONTROL         "Copyright (C) 1998",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,85,5,64,8
+    DEFPUSHBUTTON   "OK",IDOK,155,5,43,16,WS_GROUP
+    GROUPBOX        "Авторы программы :",IDC_STATIC,32,24,167,27
+    LTEXT           "Основной модуль, дизайн  -  Rodionova E.A.",IDC_STATIC,
+                    36,42,149,8
+    LTEXT           "Идея, поддержка - ......",IDC_STATIC,36,33,79,8
+    LTEXT           "Win API 32, VC++ v6.0",IDC_STATIC,22,14,75,8
+    ICON            IDI_ICON1,IDC_STATIC,11,34,20,20
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,11,66,16,16
+    GROUPBOX        "Управление программой...",IDC_STATIC,32,52,167,97,
+                    WS_GROUP,WS_EX_STATICEDGE
+    CONTROL         "Командная строка\n   file.exe  <""file_УП""> |<""file_result"">\n Результат :\n\t-время выполнения УП,\n\t-путь проходимый инструментом,\n\t-число кадров,\n\t-мин. и макс. коорд. перемещ. ,\n\t-мин. и макс. подача,\n\t-сумма импульсов (если приращ.)\n\t .... и мн. другое.. ",
+                    IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,38,63,
+                    153,82
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "Comments", "Программа статистики управляющих программ\0"
+            VALUE "CompanyName", "HOME\0"
+            VALUE "FileDescription", "Stat32\0"
+            VALUE "FileVersion", "1, 0, 0, 32\0"
+            VALUE "InternalName", "Stat32\0"
+            VALUE "LegalCopyright", "Copyright © 1998\0"
+            VALUE "LegalTrademarks", "Rodionova, 1997\0"
+            VALUE "OriginalFilename", "Stat32.exe\0"
+            VALUE "PrivateBuild", "для КнААПО\0"
+            VALUE "ProductName", "HomeComputer Stat32\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "Авторские права, исходные тексты принадлежат Rodionova E.A.\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 181
+        BOTTOMMARGIN, 269
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 199
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "pb_prog.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "Stat32"
+    IDS_HELLO               "?: выберите УП и нажмите кнопку 'Статистика->'"
+    IDC_STAT32              "STAT32"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_STAT32              ICON    DISCARDABLE     "Stat32.ICO"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_STAT32 MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Notepad",                     IDM_NOTE
+        MENUITEM SEPARATOR
+        MENUITEM "Save results...",             IDM_SAVERESULT
+        MENUITEM "Clear",                       IDM_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+    MENUITEM "",                            65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_STAT32 ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
